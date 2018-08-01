@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h2>WElCOME TO THE LOGIN PAGE</h2>
+
+<table>
+
+<form>
+
+	<tr>
+		<td>Name</td>
+		<td><input type="text" id="name"/></td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td><input type="password" id="password"/></td>
+	</tr>
+	<tr>
+    	<td><input type="submit" value="Submit" onclick="alertFor(this.form)"/></td>
+    </tr>
+    
+    <script>
+    function alertFor(form) {
+    	if(form.name.value=="vaishnavi" && form.password.value=="vaishu"){
+    		alert("Successfully logged in");
+    	}
+    	if(form.name.value=="vaishnavi" && form.password.value=="vvvv"){
+    		alert("Login Failed as password is incorrect");
+    	}
+    	if(form.name.value=="vaish" && form.password.value=="vvvv"){
+    		alert("Login Failed as username and password is incorrect");
+    	}
+    }
+    </script>
+
+</form>
+
+</table>
+
+</body>
+</html>
